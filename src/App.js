@@ -6,18 +6,19 @@ import Posts from "./components/Posts/Posts"
 import Contacts from "./components/Contacts/Contacts"
 import NotFound from "./components/NotFound/NotFound"
 import Products from "./components/Products/Products"
+import "./App.css";
 function App() {
-const activeLinkStyle = {
+  const activeLinkStyle = {
   fontWeight: 'bold'
 };
 
 
   return (
     <div className="App">
-<ul>
+<ul className="Nav">
   <li>
     <NavLink
-     activeStyle={ActiveLinkStyle}
+     activeStyle={activeLinkStyle}
      activeClassName="activeLink" 
      to="/"
      exact
@@ -25,35 +26,36 @@ const activeLinkStyle = {
      </li>
      <li>
     <NavLink
-     activeStyle={ActiveLinkStyle}
+     activeStyle={activeLinkStyle}
+     activeClassName="activeLink" 
+     to="/about"
+     > About us </NavLink>
+     </li>
+     <li>
+    <NavLink
+     activeStyle={activeLinkStyle}
      activeClassName="activeLink" 
      to="/contacts"
      > Contacts </NavLink>
      </li>
+ 
      <li>
     <NavLink
-     activeStyle={ActiveLinkStyle}
-     activeClassName="activeLink" 
-     to="/about"
-     > About </NavLink>
-     </li>
-     <li>
-    <NavLink
-     activeStyle={ActiveLinkStyle}
+     activeStyle={activeLinkStyle}
      activeClassName="activeLink" 
      to="/posts"
      > Posts </NavLink>
      </li>
      <li>
     <NavLink
-     activeStyle={ActiveLinkStyle}
+     activeStyle={activeLinkStyle}
      activeClassName="activeLink" 
-     to="/roducts"
+     to="/products"
      > Products </NavLink>
      </li>
 </ul>
       <Switch>
-      <Route exact path="/" component={Home}/>
+      <Route exact path="/" component={Home} active/>
       <Route path="/about" component={About}/>
       <Route path="/posts" component={Posts}/>
       <Route path="/contacts" component={Contacts}/>
