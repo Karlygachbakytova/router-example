@@ -1,6 +1,8 @@
-const Shoes = () => {
+import classes from "./Shoes.module.css";
+
+const Shoes = ({ match }) => {
     return ( 
-        <h1>Product #{match.params.id}</h1>
+        <h1 className={classes.Shoes}>Product #{match.params.id}</h1>
      );
 }
  

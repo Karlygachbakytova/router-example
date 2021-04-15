@@ -1,6 +1,7 @@
+import classes from "./Home.module.css";
 const Home = () => {
     return (
-     <div> This is home page</div>  
+     <div className={classes.Home}> This is home page</div>  
       );
 }
  

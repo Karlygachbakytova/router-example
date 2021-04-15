@@ -4,7 +4,7 @@ import {Route } from "react-router"
 
 const Products = ({ match }) => {
     return ( 
-        <div className="products">
+        <div className="Products">
 {match.isExact}
         <Clothes/>
         <Route path="/products/:id" component={Shoes}/>
