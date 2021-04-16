@@ -1,7 +1,12 @@
 .Contacts {
-    padding-top: 20px;
+   margin: 50px;
     text-align: center;
 }
-.uscon {
+.uscon{
+    font-size: 35px;
+    line-height: 30px;
+}
+.Title{
+    line-height: 30px;
     font-size: 24px;
 }

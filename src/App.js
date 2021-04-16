@@ -7,6 +7,7 @@ import Contacts from "./components/Contacts/Contacts"
 import NotFound from "./components/NotFound/NotFound"
 import Products from "./components/Products/Products"
 import "./App.css";
+import Reviews from "./components/Reviews/Reviews"
 function App() {
   const activeLinkStyle = {
   fontWeight: 'bold'
@@ -53,6 +54,13 @@ function App() {
      to="/products"
      > Products </NavLink>
      </li>
+     <li>
+    <NavLink
+     activeStyle={activeLinkStyle}
+     activeClassName="activeLink" 
+     to="/reviews"
+     > Reviews </NavLink>
+     </li>
 </ul>
       <Switch>
       <Route exact path="/" component={Home} active/>
@@ -60,6 +68,7 @@ function App() {
       <Route path="/posts" component={Posts}/>
       <Route path="/contacts" component={Contacts}/>
       <Route path="/products" component={Products}/>
+      <Route path="/reviews" component={Reviews}/>
       <Route path="/" component={NotFound}/>
      
       {/* <Redirect to="/"/> */}
