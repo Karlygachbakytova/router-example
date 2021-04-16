@@ -1,5 +1,24 @@
-.Clothes{
-    text-align: center;
+.ListProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    font-size: 36px;
     list-style-type: none;
-    
+    margin: 0;
+    padding: 0;
+
+}
+
+.ListProducts li{
+
+    flex: 0 0 350px;
+    margin: 10px;
+   
+    width: 300px;
+}
+.ListProducts li:hover{
+    background-color: rgb(61, 61, 61);
+    color: rgb(214, 214, 214);
 }

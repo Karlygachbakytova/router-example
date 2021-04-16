@@ -1,3 +1,9 @@
-.About{
-    text-align: center;
+.Reviews{
+
+    display: flex;
+    justify-content: space-between;
+  
+    margin: 50px;
+list-style-type: none;
+
 }

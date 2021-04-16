@@ -1,5 +1,5 @@
-import ListProducts from "./ListProducts/ListProducts";
-import Shoes from "./Shoes/Shoes"
+import FullProducts from "./FullProducts/FullProducts";
+import ListProducts from "./ListProducts/ListProducts"
 import {Route } from "react-router"
 
 const Products = ({ match }) => {
@@ -7,7 +7,7 @@ const Products = ({ match }) => {
         <div className="Products">
 {match.isExact}
         <ListProducts/>
-        <Route path="/products/:id" component={Shoes}/>
+        <Route path="/products/:id" component={FullProducts}/>
         </div>
      );
 }

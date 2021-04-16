@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import classes from "./ListProduct.module.css"
+import classes from "./ListProducts.module.css"
 
-const ListProduct = () => {
+const ListProducts = () => {
     const results = [];
     for (let id = 1; id <= 5; id++){
         results.push(<li> <Link to={"/products/" + id}> Products number #{id}</Link></li>)
@@ -10,4 +10,4 @@ const ListProduct = () => {
         <ul className={classes.ListProduct}>{results}</ul>
     );
 }
-export default ListProduct;
+export default ListProducts;
