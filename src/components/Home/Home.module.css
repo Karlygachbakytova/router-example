@@ -1,5 +1,14 @@
+
 .Home{
+    background-image: url(../../images/homepage.jpeg) ;
+    width: 100%;
+   
+    margin: 0 auto;
+}
+.Home1{
     text-align: center;
     margin: 50px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
