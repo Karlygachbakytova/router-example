@@ -3,13 +3,13 @@ import ListProducts from "./ListProducts/ListProducts"
 import {Route } from "react-router"
 import  classes from "./LatestNews.module.css"
 
-const LatestNews = ({ match }) => {
+const LatestNews = ({match}) => {
     return ( 
-        <div className="LatestNews">
+        <div className={classes.LatestNews}>
 {match.isExact}
         <ListProducts/>
         <Route path="/latestnews/:id" component={FullProducts}/>
         </div>
      );
 }
-LatestNews;
+export default LatestNews;
