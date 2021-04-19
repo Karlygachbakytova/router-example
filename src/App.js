@@ -5,7 +5,7 @@ import Home  from "./components/Home/Home"
 import Posts from "./components/Posts/Posts"
 import Contacts from "./components/Contacts/Contacts"
 import NotFound from "./components/NotFound/NotFound"
-import Products from "./components/Products/Products"
+import LatestNews from "./components/LatestNews/LatestNews"
 import "./App.css";
 import Reviews from "./components/Reviews/Reviews"
 import Support from "./components/Support/Support"
@@ -52,8 +52,8 @@ function App() {
     <NavLink
      activeStyle={activeLinkStyle}
      activeClassName="activeLink" 
-     to="/products"
-     > Products </NavLink>
+     to="/latestnews"
+     > LatestNews </NavLink>
      </li>
      <li>
     <NavLink
@@ -71,11 +71,11 @@ function App() {
      </li>
 </ul>
       <Switch>
-      <Route className="Link" exact path="/" component={Home} active/>
+      <Route exact path ="/" component={Home} active/>
       <Route path="/about" component={About}/>
       <Route path="/posts" component={Posts}/>
       <Route path="/contacts" component={Contacts}/>
-      <Route path="/products" component={Products}/>
+      <Route path="/latestnews" component={LatestNews}/>
       <Route path="/reviews" component={Reviews}/>
       <Route path="/support" component={Support}/>
       <Route path="/" component={NotFound}/>
